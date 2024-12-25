@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Src/KotasAi.css" />
     <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="Src/KotasAi.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
 </head>
 
@@ -16,16 +17,12 @@
     <main>
 
    
-    <form>
+    <form id="poem-generator-form">
         <input type="text" placeholder="Enter the topic of the French"  
         autofocus required autocomplete="off" class="instructions"/> 
         <input type="submit" class="submit-button" />
     </form>
-    <div class="poem">
-        The poem will go here
-        <br>
-        The poem will go here
-    </div>
+    <div class="poem" id="poem"></div>
  </main>
     <footer>This AI project was coded by
         <a href="https://github.com/sooonotkota" target="_blank"> Dakota Thomas</a> is open-sourced on
