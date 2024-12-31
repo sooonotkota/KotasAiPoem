@@ -10,7 +10,7 @@ function displayPoem(response) {
 function generatePoem(event) {
   event.preventDefault();
 
-  let instructionsInput = document.querySelector("#user-instructions");
+  let instructionsInput = document.querySelector("#instructions");
   let apiKey = "c5fb501012566e9bd47a3bo39e25tb37";
   let prompt = `User instructions: Generate a poem about ${instructionsInput.value}`;
   let context =
@@ -26,3 +26,4 @@ function generatePoem(event) {
 
 let poemFormElement = document.querySelector("#poem-generator-form");
 poemFormElement.addEventListener("submit", generatePoem);
+
